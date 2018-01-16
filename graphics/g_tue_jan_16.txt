@@ -1,0 +1,19 @@
+-class site: http://faculty.missouri.edu/duanye/cs4610.html
+-final project "hall of fame": http://faculty.missouri.edu/duanye/course/cs4610-spring-2017/assignment/final-project-2017.html
+-opengl based
+-book can be found online
+
+-slides:
+
+*objectives
+-top-down approach
+-shader-based opengl
+-opengl 3.1 (and later)
+-open gl es 2.0 (embedded systems)
+-webGL
+
+*pre-reqs
+*requirements
+-5 assignments
+-simple, interactive, 3D
+-course project, pick topic with up to 2 other members
