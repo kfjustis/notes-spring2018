@@ -1,0 +1,50 @@
+homework does need a report for first assignment
+
+*submission
+-upload pdf of report
+-upload a readme on how to build the program (zip of project)
+
+any software is allowed in the final project
+
+
+slides:
+
+*elements of image formation
+-objects
+-viewer
+-light source(s)
+
+*light
+-spectrum
+-visible light vs infrared
+-wavelength and frequency are inverse
+
+*raytracing and geometric optics
+-light bounces off of objects and eventually reaches camera lens
+
+*luminance and color images
+-we work with mostly color pictures
+
+*three-color theory
+-red, green, blue make up all colors
+
+*additive and subtractive color
+-additive color:
+  -form a color by adding amounts of primaries
+  -primaries are red, green, blue
+    -crts and positive film
+-subtractive color:
+  -form a color by filtering white light with cyan
+  -cyan, magenta, and yellow filters
+    -often for printing and negative film
+
+*pinhole camera
+-formula to calculate the projection of the 3d object
+
+*synthetic camera model
+
+*advantages
+-2d graphics is a special case of three dimensions
+
+*why not raytracing?
+-it's accurate, but often too slow for realtime
