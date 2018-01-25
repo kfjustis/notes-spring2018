@@ -4,3 +4,4 @@ homework/
 
 #files
 *.png
+.DS_Store
