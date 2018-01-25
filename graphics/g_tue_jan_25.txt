@@ -1,0 +1,48 @@
+*opengl and glsl
+-based less on state machine model than a data flow model
+-most state variables, attributes and related pre 3.1 opengl functions have been
+ deprecated
+-action happens in shaders
+-job of app is to get data to GPU
+
+*glsl
+-opengl shading language
+-c-like
+  -matrix and vector types (2, 3, 4 dimensional)
+  -overloaded operators
+  -c++ like constructors
+-similar to Nvidia's Cg and Microsoft HLSL
+-code sent to shaders as source code
+-new opengl functions to compile, link, and get information to shaders
+
+*objectives
+-build a complete first program
+-simple viewing
+-initialization steps and program structure
+
+*program structure
+-main()
+  -defines the callback functions
+  -opens one or more windows with the required properties
+  -enters event loop
+-init(): sets the state variables
+  -viewing
+  -attributes
+-callbacks
+  -display function
+  -input and window functions
+
+*immediate mode graphics
+-geometry specified by vertices
+  -locations in space (2/3 dimensional)
+  -points, lines, circles, polygons, curves, surfaces
+-immediate mode
+  -each time a vertex is specified in application, its location is sent
+  to the GPU
+-old style uses glVertex
+-creates bottleneck between CPU and GPU
+-removed from opengl 3.1
+
+*display function
+-once we get data to GLFW, we can initiate the rendering
+-arrays are buffer objects that contain vertex arrays

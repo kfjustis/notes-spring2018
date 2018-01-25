@@ -1,0 +1,79 @@
+*image information revisited
+-can we miic synthetic camera model?
+
+*physical approaches
+-ray tracing
+-radiosity
+
+*practical approach
+-process objects one at a time
+  -downside is that we can only consider local lighting with this
+-pipeline architecture
+  -vertices -> vertex process -> clipper and primitive assembler ->
+  rasterizer -> fragment processor -> pixels
+
+*vertex processing
+-much of the work in the pipeline is in converting object
+representations from one coordinate system to another
+  -object coordinates
+  -camera (eye) coordinates
+  -screen coordinates
+-every change of coordinates is equivalent to a matrix transformation
+-vertex processor also computes vertex colors
+-linear interpolation:
+  -f(lam) = (1-lam)f(0) + (lam)f(1)
+
+*projection
+-process that combines the 3D viewer with the 3D objects to produce the 2D image
+  -perspective projections: all projectors meet at the center of projection
+  -parallel projection: projectors are parallel, center of projection
+  is replaced by a direction of projection (prevents distortion)
+
+*primitive assembly
+-vertices must be collected into geometric objects before clipping and
+rasterization can take place
+  -line segments
+  -polygons
+  -curves and surfaces
+
+*clipping
+-view plane <- | -> front clipping plane | < -- visible view volume -- >| back clipping plane
+
+*rasterization
+-if object not clipped, the appropriate pixels in the frame buffer must be assigned colors
+-rasterizer produces a set of fragments for each object
+-fragments are "potential pixels"
+  -have a location in frame buffer
+  -color and depth attributes
+-vertex attributes are interpolated over objects by the rasterizer
+
+*fragment processing
+-frags are processed to determine the color of the corresponding pixel in the frame buffer
+-colors can be determined by texture mapping or interpolation of vertex colors
+-fragments may be blocked by other fragments closer to the camera
+  -hidden-surface removal
+
+*programmer interface
+-software interface, API
+
+*api contents
+-functions that specify what we need to form an image
+  -objects
+  -viewer
+  -light source(s)
+  -materials
+-other information
+  -input from devices such as mouse and keyboard
+  -capabilities of the system
+
+*objects specification
+-most APIs support a limited set of primitives including:
+  -points (0D objecct)
+  -line segments (1D objects)
+  -polygons (2D objects)
+  -some curves and surfaces
+    -quadrics
+    -parametric polynomials
+-all are defined through locations in space or vertices
+
+*early history of APIs
