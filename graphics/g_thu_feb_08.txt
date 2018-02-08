@@ -1,0 +1,19 @@
+*input and interaction
+-event-driven
+
+*input mode
+-input devices contain a trigger which can be used to send a signal to the
+ operating system
+ -button on mouse
+ -pressing or releasing a key
+-when triggered, input devices return information (their measure) to the system
+
+*request mode
+-input only happens from a trigger
+
+*different event types
+-window, mouse, motion, etc...
+
+*callbacks
+-programming interface for event-driven input
+-makes GLFW nice, since it is cross platform
