@@ -1,0 +1,34 @@
+*objectives
+-talked about homogeneous transformations last week
+
+*general transformations
+-mapping points to other points or vectors to other vectors
+
+*affine transformations
+-line preserving
+-characteristic of many physically important transformations
+  -rigid body transformations: rotation, translation, scaling, shear
+-just have to transform the endpoints and draw between those
+-don't confuse with deform transformations (classic vs shape tween)
+
+*pipeline implementation
+-(v, u) -> transformation -> rasterizer -> (T(u), T(v))
+
+*slides for coordinates notation
+
+<--Math stuff-->
+  *translation
+
+  *rotation 2d
+
+  *scaling
+
+  *shear
+  -not used very much
+<--End math stuff-->
+
+*more Shu
+glGetUniformLocation(shader_programme, "color")
+
+-problem is passing data to shader without re-initializing it
+-use of global variable
