@@ -1,0 +1,11 @@
+*objectives
+-introduce classical views
+
+*classical viewing
+
+*perspective projection
+
+*orthographic projection
+-preserves measurement and angle of the lens
+-hides many surfaces from view
+-this view is used to make 2d games in 3d space
