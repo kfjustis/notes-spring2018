@@ -1,0 +1,5 @@
+*going over assignment 3a
+
+*defining virtual camera (view matrix)
+
+*setup perspective projection matrix
