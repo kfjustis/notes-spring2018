@@ -1,0 +1,68 @@
+*assignment 3a is due next thursday, march 22
+
+*logic for rotation
+-mouse press, get pos
+-drag
+-mouse release, get pos
+
+-decompose the vector from the drag into x and y components,
+then rotate x, then y because rotating around an arbitrary
+axis is much harder
+
+*shading
+*lighting principles
+-lighting simulates how objects reflect light
+	-material composition of object
+	-light's color and position
+	-global lighting parameters
+
+*why we need shating
+-have to learn to shade objects so they look 3D
+
+-surface normal is the vector that's perpendicular to the tangent at a given
+point on that surface. it faces directly away from the surface
+
+-perfectly diffuse reflector doesn't have a singly favored surface normal
+since it's too rough
+	-known as a Lambertian Surface
+	-light gets scattered equally in all directions
+	-amount of light reflected is proportional to the vertical
+	component of incoming light
+		-reflected light ~cos theta
+
+*specular surfaces
+-approximation using phong model
+
+*computation of vectors
+-h is halfway vector, is normalized vector halfway between l and v
+-l and v are specified by the application
+
+*plane normals
+-found with any two vectors on a plane, normal is the cross product
+
+*normal for a triangle
+-look in slides
+-just cross two edges of the triangle, then normalize n <- n/|n|
+
+n = U x V
+
+U = <Ux, Uy, Uz)
+V = <Vx, Vy, Vz)
+
+i 	j 	k
+Ux	Uy	Uz
+Vx	Vy	Vz
+
+ i(Uy Vz - Uz Vy)
++j(Vx Uz - Vz Ux) because j is negative
++k(Ux Vy - Uy Vx)
+
+then you can write this out in component form
+and divide each component
+
+U = (x,y,z) -> |U| = sqrt(x^2+y^2+z^2)
+
+but this would be for the whole triange, we want just the normal for the vertex
+
+typical way would be to compute normals of triangles around the given vertex,
+then add them together and average
