@@ -1,0 +1,9 @@
+*homework 3a
+-make sure to use glm functions
+-make sure you separate the mouse vector into two parts
+	-> x component and a y component
+-he strangely wants the cube to keep rotating after a mouse drag
+
+don't use vPosition with 1.0, just use vPosition...? has something
+to do with the projection in the vertex shader as long as you define
+it as a vec4 already
