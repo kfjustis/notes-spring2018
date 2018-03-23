@@ -1,0 +1,3 @@
+*more shading stuff
+
+*vertex lighting shaders II
