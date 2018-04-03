@@ -1,0 +1,14 @@
+*assignment 3b Q&A slides
+
+*obj parser
+-load simple wavefront obj mesh file
+
+*calculating normals
+-equations in slides
+
+*shading
+-ambient
+-diffuse
+-specular
+
+-define light properties, then define the material properties
